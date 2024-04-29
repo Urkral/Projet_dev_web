@@ -1,4 +1,5 @@
 {
     "inlineChat.accessibleDiffView": "auto",
-    "github.copilot.editor.enableAutoCompletions": false
+    "github.copilot.editor.enableAutoCompletions": false,
+    "liveServer.settings.port": 5501
 }
