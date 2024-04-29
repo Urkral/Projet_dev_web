@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: chartreuse;
+    div{
+        width: 33%;
+    }
+}
+.logo{
+    width: 75px;
+    height: 75px;
+
+}
+.burger_menu{
+    width: 25px;
+    height: 25px;
+}
+.registration{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    li{
+        padding: 10px;
+        a{
+            text-decoration: none;
+            color: black;
+            img{
+                height: 30px;
+                width: 30px;
+            }
+        }
+    }
+}
+.secondary_nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding-left: 0;
+    background-color: yellowgreen;
+    height: 50px;
+}
+
+
+.secondary_nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.new_collection{
+  height: 750px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+
+
+/* Scroll horizontal listes chaussure */
+.shoes_list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    width: auto;
+    scroll-snap-type: x mandatory;
+    .row .col {
+        background-color: #598AC6;
+        width: 300px;
+        border-style: solid;
+        margin: 20px;
+        text-align: center;
+        img{
+            width: 300px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
