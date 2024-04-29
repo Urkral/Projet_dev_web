@@ -89,6 +89,9 @@ header{
 }
 
 
+
+
+/* style for the burger menu in the header */
 #menuToggle
 {
   display: block;
@@ -200,7 +203,7 @@ header{
 #menu
 {
   position: absolute;
-  width: 300px;
+  width: 100px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
@@ -229,3 +232,62 @@ header{
 {
   transform: none;
 }
+
+
+/* style for the shoes presentation */
+.shoes_presentation{
+  padding-top: 35%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  div{
+    margin-top: 25px;
+  }
+  img{
+    width: 200px;
+  }
+  h3{
+    font-size: 1rem;
+    font-family:Arial, Helvetica, sans-serif ;
+    width: 80%;
+    margin: 0;
+  }
+  p{
+    align-self:baseline;
+    margin-left: 10%;
+    margin-top: 5px;
+  }
+}
+.shoe_description {
+  border-top: solid 2px black;
+  font-family: Arial;
+  padding-top: 15px;
+}
+
+
+.shoe_description > h4 {
+  margin: 15px;
+}
+
+.shoe_description > p {
+  margin: 15px;
+}
+
+.hint {
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 15px;
+  transition: .2s ease;
+}
+
+.hint > p {
+  overflow: hidden;
+  max-height: 0px;
+  width: 85%;
+  transition-delay: 0.2s;
+}
+
+#hint-click:checked + .hint > p {
+  max-height: 999px;
+} 
+
