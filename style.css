@@ -244,7 +244,12 @@ header{
     margin-top: 25px;
   }
   img{
-    width: 150px;
+    width: 200px;
+  }
+  @media screen and (max-width: 404px){
+    img{
+      width: 150px;
+    }
   }
   h3{
     font-size: 1rem;
@@ -296,8 +301,9 @@ header{
 /* Ajout du style "zoom" pour les photos des pages shoes */
 .lightbox-target {
 position: fixed;
-top: -100%;
+top: 0;
 width: 100%;
+left: 0;
 background: rgba(0,0,0,.7);
 opacity: 0;
 -webkit-transition: opacity .5s ease-in-out;
@@ -340,7 +346,7 @@ background: white;
 color: black;
 text-decoration: none;
 position: absolute;
-top: -80px;
+top: -500px;
 right: 0;
 -webkit-transition: .5s ease-in-out;
 -moz-transition: .5s ease-in-out;
@@ -398,4 +404,139 @@ max-width: 100%;
 
 .lightbox-target:target a.lightbox-close {
 top: 0;
+}
+
+
+#new_collection_pic{
+  width: 100%;
+  img{
+    width: 100%;
+  }
+
+}
+
+.colors_off_white{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  h3{
+    margin-top: 50px;
+    margin-left: 40px;
+  }
+  ul{
+    list-style: none;
+    display: flex;
+
+    flex-wrap: wrap;
+    li{
+      width: 45%;
+      font-family: Arial, Helvetica, sans-serif ;
+      p{
+
+        padding: 0;
+        margin: 0;
+      }
+      img{
+        margin: 0;
+        width: 150px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  article{
+    margin-left: 15px;
+    h3{
+      margin: 0;
+    }
+    p{
+      margin: 0;
+      margin-top: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+}
+.login-form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+}
+
+.login-form form {
+  width: 300px;
+}
+
+.login-form .form-group {
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color:skyblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-form button[type="submit"]:hover {
+  background-color:#598AC6;
+}
+
+.forgot-password-form {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.forgot-password-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.forgot-password-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.forgot-password-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.forgot-password-form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.forgot-password-form button[type="submit"]:hover {
+  background-color: #45a049;
 }
