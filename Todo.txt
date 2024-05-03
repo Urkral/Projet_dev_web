@@ -1,5 +1,5 @@
 -Make all the shoes page become the index page (done!)
--Make the login page
+-Make the login page (done!)
 -Make the cart page
 -Make new collection page (done!)
 -Make the pages for the secondary nav bar
