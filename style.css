@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .all_header_container {
@@ -200,7 +201,6 @@ header {
 
 .shoes_presentation h3 {
   font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
   width: 80%;
   margin: 0;
 }
@@ -213,7 +213,6 @@ header {
 
 .shoe_description {
   border-top: solid 2px black;
-  font-family: Arial;
   padding-top: 15px;
 }
 
@@ -224,6 +223,47 @@ header {
 .shoe_description > p {
   margin: 15px;
 }
+
+.buy_shoes{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 25px;
+  p{
+    margin:0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  a{
+    text-decoration: none;
+    background-color: #222;
+    border-radius: 4px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+    margin-bottom: 15px;
+    max-width: none;
+    min-height: 44px;
+    min-width: 10px;
+    outline: none;
+    overflow: hidden;
+    padding: 9px 20px 8px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    user-select: none;
+    touch-action: manipulation;
+    width: 40%;
+  }
+}
+
+
 
 .hint {
   margin-top: 15px;
@@ -365,7 +405,6 @@ a.lightbox-close:after {
 
 .colors_off_white ul li {
   width: 45%;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .colors_off_white ul li p {
@@ -390,7 +429,6 @@ a.lightbox-close:after {
 .colors_off_white article p {
   margin: 0;
   margin-top: 10px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .login-form {
@@ -430,7 +468,6 @@ top: 0;
     flex-wrap: wrap;
     li{
       width: 45%;
-      font-family: Arial, Helvetica, sans-serif ;
       p{
 
         padding: 0;
@@ -451,7 +488,6 @@ top: 0;
     p{
       margin: 0;
       margin-top: 10px;
-      font-family: Arial, Helvetica, sans-serif;
     }
   }
 }
@@ -542,13 +578,7 @@ top: 0;
 }
 
 .cart-container{
-  width: 100%;
   margin-left: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  th{
-    width: 50%;
-  }
-
 }
 
 
@@ -568,7 +598,6 @@ top: 0;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
@@ -600,9 +629,7 @@ top: 0;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  h2{
-    font-family: Arial, Helvetica, sans-serif;
-  }
+
 }
 
 .back-index {
@@ -617,7 +644,6 @@ top: 0;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -655,3 +681,6 @@ top: 0;
     padding: 12px 50px;
   }
 }
+
+
+

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../../style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -10,26 +10,10 @@
     <header>
         <nav role="navigation">
             <div id="menuToggle">
-              <!--
-              A fake / hidden checkbox is used as click reciever,
-              so you can use the :checked selector on it.
-              -->
               <input type="checkbox" />
-              
-              <!--
-              Some spans to act as a hamburger.
-              
-              They are acting like a real hamburger,
-              not that McDonalds stuff.
-              -->
               <span></span>
               <span></span>
               <span></span>
-              
-              <!--
-              Too bad the menu has to be inside of the button
-              but hey, it's pure CSS magic.
-              -->
               <ul id="menu">
                 <a href="#"><li>Home</li></a>
                 <a href="#"><li>About</li></a>
@@ -39,39 +23,39 @@
               </ul>
             </div>
           </nav>
-        <div><a href="../index.html"><img src="../img/Logo.jpg" alt="Logo" class="logo"></a></div>
+        <div><a href="../../index.html"><img src="../../img/Logo.jpg" alt="Logo" class="logo"></a></div>
         <div>
             <ul class="registration">
-                <li><a href="login.html"><img src="../img/user.svg" alt="Connection"></a></li>
-                <li><a href="cart.html"><img src="../img/shopping_cart.svg" alt="Panier"></a></li>     
+                <li><a href="../login.html"><img src="../../img/user.svg" alt="Connection"></a></li>
+                <li><a href="../cart.html"><img src="../../img/shopping_cart.svg" alt="Panier"></a></li>     
             </ul>
         </div>   
     </header>
     <ul class="secondary_nav">
-        <li><a href="../pages/brand.html">Marque</a></li>
-        <li><a href="../pages/sneakers.html">Sneakers</a></li>
-        <li><a href="../pages/news.html">News</a></li> 
-        <li><a href="../pages/promos.html">Promos</a></li>
+        <li><a href="../../pages/brand.html">Marque</a></li>
+        <li><a href="../../pages/sneakers.html">Sneakers</a></li>
+        <li><a href="../../pages/news.html">News</a></li> 
+        <li><a href="../../pages/promos.html">Promos</a></li>
     </ul>
 
         <div class="cart-container">
-            <h3>Panier</h3>
+            <h3>Panier :</h3>
             <table>
                 <thead>
                     <tr>
-                        <th>Produit</th>
-                        <th>Prix</th>
+                        <td>Produit :</td>
+                        <td>Prix :</td>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="cart-item">
                         <td>
-                            <img src="../img/Dunk_super_nana.webp" alt="Produit 1" class="product-image">
+                            <img src="../../img/Dunk_super_nana.webp" alt="Produit 1" class="product-image">
                         </td>
-                        <td>10€</td>
+                        <td>350€</td>
                     </tr>
                     <tr>
-                        <td><span class="cart-shoe-name">Nike SB Super Nane rose</span></td>
+                        <td><span class="cart-shoe-name">Nike SB Super Nane Blossom</span></td>
                     </tr>
                     
                 </tbody>
@@ -79,11 +63,9 @@
             
             <div class="cart-total">
                 <span>Total:</span>
-                <span>10€</span>
+                <span>350€</span>
             </div>
-            <div>
-                <a class="checkout-button" href="./thanks_page.html">Payer</a>
-            </div>
+                <a class="checkout-button" href="../thanks_page.html">Payer</a>
         </div>
 </body>
 </html>

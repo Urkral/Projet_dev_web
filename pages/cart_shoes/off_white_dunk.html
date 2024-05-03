@@ -4,84 +4,68 @@
     <link rel="stylesheet" href="../../style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dunk Off White</title>
+    <title>Document</title>
 </head>
 <body>
-    <div class="all_header_container">
-        <header>
-            <nav role="navigation">
-                <div id="menuToggle">
-                  <input type="checkbox" />
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <ul id="menu">
-                    <a href="#"><li>Home</li></a>
-                    <a href="#"><li>About</li></a>
-                    <a href="#"><li>Info</li></a>
-                    <a href="#"><li>Contact</li></a>
-                    <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
-                  </ul>
-                </div>
-              </nav>
-            <div><a href="../../index.html"><img src="../../img/Logo.jpg" alt="Logo" class="logo"></a></div>
-            <div>
-                <ul class="registration">
-                    <li><a href="../../pages/login.html"><img src="../../img/user.svg" alt="Connection"></a></li>
-                    <li><a href="../../pages/cart.html"><img src="../../img/shopping_cart.svg" alt="Panier"></a></li>     
-                </ul>
-            </div>   
-        </header>
-        <nav class="secondary_nav_container"> 
-            <ul class="secondary_nav">
-                <li><a href="../../pages/brand.html">Marque</a></li>
-                <li><a href="../../pages/sneakers.html">Sneakers</a></li>
-                <li><a href="../../pages/news.html">News</a></li> 
-                <li><a href="../../pages/promos.html">Promos</a></li>
-            </ul>
-        </nav>
-        </div>
-
-
-    <div class="shoes_presentation">
-        <a class="lightbox" href="#dog">
-            <img src="../../img/Off_white_dunk_low.webp" alt="Photo de la dunk off-white lot 26/50">
-        </a> 
-        <div class="lightbox-target" id="dog">
-            <img src="../../img/Off_white_dunk_low.webp" alt="Photo de la dunk off-white lot 26/50">
-            <a class="lightbox-close" href="#"></a>
-         </div>
+    <header>
+        <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>About</li></a>
+                <a href="#"><li>Info</li></a>
+                <a href="#"><li>Contact</li></a>
+                <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+              </ul>
+            </div>
+          </nav>
+        <div><a href="../../index.html"><img src="../../img/Logo.jpg" alt="Logo" class="logo"></a></div>
         <div>
+            <ul class="registration">
+                <li><a href="../login.html"><img src="../../img/user.svg" alt="Connection"></a></li>
+                <li><a href="../cart.html"><img src="../../img/shopping_cart.svg" alt="Panier"></a></li>     
+            </ul>
+        </div>   
+    </header>
+    <ul class="secondary_nav">
+        <li><a href="../../pages/brand.html">Marque</a></li>
+        <li><a href="../../pages/sneakers.html">Sneakers</a></li>
+        <li><a href="../../pages/news.html">News</a></li> 
+        <li><a href="../../pages/promos.html">Promos</a></li>
+    </ul>
 
-            <a class="lightbox" href="#dog2">
-            <img src="../../img/Dunk_off_white/Dunk_off_white_pair.webp" alt="Photo de la dunk off-white lot 26/50">
-            </a> 
-            <div class="lightbox-target" id="dog2">
-                <img src="../../img/Dunk_off_white/Dunk_off_white_pair.webp" alt="Photo de la dunk off-white lot 26/50">
-                <a class="lightbox-close" href="#"></a>
+        <div class="cart-container">
+            <h3>Panier :</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Produit :</td>
+                        <td>Prix :</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="cart-item">
+                        <td>
+                            <img src="../../img/Off_white_dunk_low.webp" alt="Produit 1" class="product-image">
+                        </td>
+                        <td>750€</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cart-shoe-name">Dunk Off-White lot 26/50</span></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            <div class="cart-total">
+                <span>Total:</span>
+                <span>750€</span>
             </div>
-
-            <a class="lightbox" href="#dog3">
-            <img src="../../img/Dunk_off_white/Dunk_off_white_back.webp" alt="Photo de la dunk off-white lot 26/50">
-            </a>
-            <div class="lightbox-target" id="dog3">
-                <img src="../../img/Dunk_off_white/Dunk_off_white_back.webp" alt="Photo de la dunk off-white lot 26/50">
-                <a class="lightbox-close" href="#"></a>
-            </div>
+                <a class="checkout-button" href="../thanks_page.html">Payer</a>
         </div>
-        <h3>Nike Dunk Low Off-White Lot 26</h3>
-        <p>À partir de 750€</p>
-    </div>
-<div class="shoe_description">
-    <label for="hint-click">
-      <input type="checkbox" id="hint-click" style="display: none;">
-      <div class="hint">
-        <span class="fa fa-info">Description +</span>
-        <p>La Nike Dunk Low Off-White Lot 26 est pourvue d'une base en cuir blanc cassé, ainsi que d'empiècements en cuir gris. En ce qui concerne la combinaison de couleur des éléments de détail : du bleu turquoise pour les surlacets et du bleu pour le zip tie et la languette. Dernier élément, l'inscription "26 of 50" est présent au niveau de la midsole</p> 
-      </div>
-    </label>
-  </div>
-
-
 </body>
 </html>

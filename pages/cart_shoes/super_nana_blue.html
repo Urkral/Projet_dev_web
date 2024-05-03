@@ -4,86 +4,68 @@
     <link rel="stylesheet" href="../../style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jordan 1 Travis Scott</title>
+    <title>Document</title>
 </head>
 <body>
-    <div class="all_header_container">
-        <header>
-            <nav role="navigation">
-                <div id="menuToggle">
-                  <input type="checkbox" />
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <ul id="menu">
-                    <a href="#"><li>Home</li></a>
-                    <a href="#"><li>About</li></a>
-                    <a href="#"><li>Info</li></a>
-                    <a href="#"><li>Contact</li></a>
-                    <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
-                  </ul>
-                </div>
-              </nav>
-            <div><a href="../../index.html"><img src="../../img/Logo.jpg" alt="Logo" class="logo"></a></div>
-            <div>
-                <ul class="registration">
-                    <li><a href="../../pages/login.html"><img src="../../img/user.svg" alt="Connection"></a></li>
-                    <li><a href="../../pages/cart.html"><img src="../../img/shopping_cart.svg" alt="Panier"></a></li>     
-                </ul>
-            </div>   
-        </header>
-        <nav class="secondary_nav_container"> 
-            <ul class="secondary_nav">
-                <li><a href="../../pages/brand.html">Marque</a></li>
-                <li><a href="../../pages/sneakers.html">Sneakers</a></li>
-                <li><a href="../../pages/news.html">News</a></li>
-                <li><a href="../../pages/promos.html">Promos</a></li>
-            </ul>
-        </nav>
-        </div>
-
-
-    <div class="shoes_presentation">
-        <a class="lightbox" href="#dog">
-            <img src="../../img/Dunk_super_nana_bleue.webp" alt="Photo de la Nike SB super nana couleur bleu">
-        </a> 
-        <div class="lightbox-target" id="dog">
-            <img src="../../img/Dunk_super_nana_bleue.webp" alt="Photo de la Nike SB super nana couleur bleu">
-            <a class="lightbox-close" href="#"></a>
-         </div>
+    <header>
+        <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>About</li></a>
+                <a href="#"><li>Info</li></a>
+                <a href="#"><li>Contact</li></a>
+                <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+              </ul>
+            </div>
+          </nav>
+        <div><a href="../../index.html"><img src="../../img/Logo.jpg" alt="Logo" class="logo"></a></div>
         <div>
+            <ul class="registration">
+                <li><a href="../login.html"><img src="../../img/user.svg" alt="Connection"></a></li>
+                <li><a href="../cart.html"><img src="../../img/shopping_cart.svg" alt="Panier"></a></li>     
+            </ul>
+        </div>   
+    </header>
+    <ul class="secondary_nav">
+        <li><a href="../../pages/brand.html">Marque</a></li>
+        <li><a href="../../pages/sneakers.html">Sneakers</a></li>
+        <li><a href="../../pages/news.html">News</a></li> 
+        <li><a href="../../pages/promos.html">Promos</a></li>
+    </ul>
 
-            <a class="lightbox" href="#dog2">
-            <img src="../../img/Nike_sv_super_nana_blue/Super_nana_blue_pair.webp" alt="Photo de la Nike SB super nana couleur bleu">
-            </a> 
-            <div class="lightbox-target" id="dog2">
-                <img src="../../img/Nike_sv_super_nana_blue/Super_nana_blue_pair.webp" alt="Photo de la Nike SB super nana couleur bleu">
-                <a class="lightbox-close" href="#"></a>
+        <div class="cart-container">
+            <h3>Panier :</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Produit :</td>
+                        <td>Prix :</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="cart-item">
+                        <td>
+                            <img src="../../img/Dunk_super_nana_bleue.webp" alt="Produit 1" class="product-image">
+                        </td>
+                        <td>310€</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cart-shoe-name">Nike SB Super Nane Bubbles</span></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            <div class="cart-total">
+                <span>Total:</span>
+                <span>310€</span>
             </div>
-
-            <a class="lightbox" href="#dog3">
-                <img src="../../img/Nike_sv_super_nana_blue/Super_nana_blue_back.webp" alt="Photo de la Nike SB super nana couleur bleu">
-            </a>
-            <div class="lightbox-target" id="dog3">
-                <img src="../../img/Nike_sv_super_nana_blue/Super_nana_blue_back.webp" alt="Photo de la Nike SB super nana couleur bleu">
-                <a class="lightbox-close" href="#"></a>
-            </div>
+                <a class="checkout-button" href="../thanks_page.html">Payer</a>
         </div>
-        <h3>Nike SB Dunk Low The Powerpuff Girls Bubbles</h3>
-        <p>À partir de 310€</p>
-    </div>
-<div class="shoe_description">
-    <label for="hint-click">
-      <input type="checkbox" id="hint-click" style="display: none;">
-      <div class="hint">
-        <span class="fa fa-info">Description +</span>
-        <p>En cette fin d'année 2023, Nike s'est associé aux Powerpuff Girls (Super-Nanas) pour un pack très attendu de trois SB Dunk Low. </p> 
-        <p>Chaque silhouette de ce pack rend hommage à chacune des héroïnes du dessin animé créé par Craig McCracken. Ici, c'est Bubbles, "Bulle" en français, qui est mise à l'honneur et connue pour être la plus douce, celle qui parle aux animaux. Ses yeux sont brodés sur les talons tandis que sa silhouette complète est imprimée sur le papier à l'intérieur de la box. Cette Nike SB Dunk Low The Powerpuff Girls Bubbles présente une base en cuir texturé bleu façon peau de serpent. On remarque ensuite un Swoosh jaune, accordé aux lacets, qui rappelle la couleur de cheveux de la mini-super héroïne. </p> 
-        <p>La sortie de ce modèle est donc bien évidemment accompagnée des modèles Blossom et Buttercup pour mettre à l'honneur le trio défenseur de Townsville.</p> 
-      </div>
-    </label>
-  </div>
-
-
 </body>
 </html>
