@@ -1,6 +1,8 @@
+html{
+  font-family: Arial, Helvetica, sans-serif;
+}
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .all_header_container {
@@ -960,9 +962,6 @@ footer .footer-icons a{
 
 @media (max-width: 880px) {
 
-  footer{
-    font: bold 14px sans-serif;
-  }
 
   footer .footer-left,
   footer .footer-center,
