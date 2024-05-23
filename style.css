@@ -240,27 +240,14 @@ header {
     text-decoration: none;
     background-color: #222;
     border-radius: 4px;
-    border-style: none;
-    box-sizing: border-box;
     color: #fff;
     cursor: pointer;
-    display: inline-block;
     font-size: 16px;
     font-weight: 700;
-    line-height: 1.5;
+    text-align: center;
+    padding: 10px;
     margin: 0;
     margin-bottom: 15px;
-    max-width: none;
-    min-height: 44px;
-    min-width: 10px;
-    outline: none;
-    overflow: hidden;
-    padding: 9px 20px 8px;
-    position: relative;
-    text-align: center;
-    text-transform: none;
-    user-select: none;
-    touch-action: manipulation;
     width: 40%;
   }
 }
@@ -519,7 +506,7 @@ top: 0;
 
 .login-form input[type="text"],
 .login-form input[type="password"] {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -558,7 +545,7 @@ top: 0;
 }
 
 .forgot-password-form input[type="email"] {
-  width: 100%;
+  width: 85%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
