@@ -4,6 +4,6 @@
 -Make new collection page (done!)
 -Make the pages for the secondary nav bar
 -Make the burger menu for the first nav bar
--Make the footer
+-Make the footer (!done)
 -Meta balise
 -Edit the name of the page
