@@ -9,19 +9,25 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: #000000b6;
 }
 
 header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: chartreuse;
+  
 }
 
 .logo,
 .burger_menu {
-  width: 75px;
-  height: 75px;
+  width: 95px;
+}
+
+@media screen and (min-width: 650px) {
+  .logo {
+    width: 150px;
+  }
 }
 
 .registration {
@@ -36,12 +42,13 @@ header {
 
 .registration li a {
   text-decoration: none;
-  color: black;
+  
 }
 
 .registration li a img {
   height: 30px;
   width: 30px;
+  color: white;
 }
 
 .secondary_nav {
@@ -51,20 +58,28 @@ header {
   align-items: center;
   margin: 0;
   padding-left: 0;
-  background-color: yellowgreen;
   height: 50px;
 }
 
 .secondary_nav li a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .new_collection {
   height: 750px;
   width: 100%;
-  margin-top: 150px;
+  margin-top: 180px;
 }
+
+@media screen and (min-width: 650px) {
+  .new_collection {
+    margin-top: 200px;
+    width: 100%;
+    height: 2500px;
+  }
+}
+
 
 .shoes_list {
   display: flex;
@@ -92,7 +107,20 @@ header {
   text-decoration: none;
   color: black;
 }
-
+@media screen and (min-width: 650px) {
+  .shoes_list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .shoes_list {
+    display: flex;
+    flex-wrap:wrap;
+  }
+}
 #menuToggle {
   display: block;
   position: relative;
@@ -170,9 +198,10 @@ header {
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: translate(0, -100%);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
+
 
 #menu li {
   padding: 10px 0;
@@ -185,7 +214,7 @@ header {
 
 .shoes_presentation {
   padding-top: 35%;
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -202,6 +231,21 @@ header {
 @media screen and (max-width: 404px) {
   .shoes_presentation img {
     width: 150px;
+  }
+}
+@media screen and (min-width: 360px) {
+  .shoes_presentation {
+    padding-top: 0;
+    margin-top: 160px;
+  }
+}
+@media screen and (min-width: 650px) {
+  .shoes_presentation {
+    padding-top: 0;
+    margin-top: 220px;
+  }
+  .shoes_presentation img{
+    width: 150px;  
   }
 }
 
@@ -371,58 +415,6 @@ a.lightbox-close:after {
   top: 0;
 }
 
-#new_collection_pic {
-  width: 100%;
-}
-
-#new_collection_pic img {
-  width: 100%;
-}
-
-.colors_off_white {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.colors_off_white h3 {
-  margin-top: 50px;
-  margin-left: 40px;
-}
-
-.colors_off_white ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.colors_off_white ul li {
-  width: 45%;
-}
-
-.colors_off_white ul li p {
-  padding: 0;
-  margin: 0;
-}
-
-.colors_off_white ul li img {
-  margin: 0;
-  width: 150px;
-  margin-bottom: 15px;
-}
-
-.colors_off_white article {
-  margin-left: 15px;
-}
-
-.colors_off_white article h3 {
-  margin: 0;
-}
-
-.colors_off_white article p {
-  margin: 0;
-  margin-top: 10px;
-}
 
 .lightbox-target:target img {
 max-height: 100%;
@@ -431,7 +423,7 @@ max-width: 100%;
 
 
 #new_collection_pic{
-  width: 100%;
+  width: 50%;
   img{
     width: 100%;
   }
@@ -476,6 +468,65 @@ max-width: 100%;
     }
   }
 }
+
+@media screen and (min-width: 600px){
+  .colors_off_white{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    h3{
+      margin-top: 50px;
+      margin-left: 40px;
+      font-size: x-large;
+    }
+    ul{
+      list-style: none;
+      display: flex;
+  
+      flex-wrap: wrap;
+      li{
+        width: 45%;
+        p{
+  
+          padding: 0;
+          margin: 0;
+        }
+        img{
+          margin: 0;
+          width: 350px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+    article{
+      margin-left: 15px;
+      h3{
+        margin: 0;
+      }
+      p{
+        margin: 0;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px){
+  .lightbox{
+    img{
+      width: 250px;
+    }
+  }
+}
+@media screen and (min-width: 1500px){
+  .lightbox{
+    img{
+      width: 350px;
+    }
+  }
+}
+
+
 .login-form {
   margin-top: 150px;
   display: flex;
@@ -523,6 +574,13 @@ max-width: 100%;
   background-color:#598AC6;
 }
 
+@media screen and (min-width: 600px) {
+  .login-form{
+    margin-top: 250px;
+    margin-bottom: 200px;
+  }
+}
+
 .forgot-password-form {
   margin: 150px 20px 20px 20px;
   padding: 20px;
@@ -567,7 +625,20 @@ max-width: 100%;
   margin-left: 10px;
   margin-top: 150px;
 }
-
+@media screen and (min-width: 600px) {
+  .forgot-password-form{
+    width: 30%;
+    align-self: center;
+    margin: 250px auto;
+    #email{
+      width: 97%;
+    }
+  }
+  .cart-container{
+    margin-top: 350px;
+    margin-bottom: 180px;
+  }
+}
 
 
 .cart-item{
@@ -612,6 +683,12 @@ max-width: 100%;
   flex-direction: column;
 
 }
+@media (min-width: 768px) {
+  .thanks{
+    margin-top: 100px;
+  }
+  
+ }
 
 .back-index {
   text-decoration: none;
@@ -690,6 +767,12 @@ max-width: 100%;
     }
   }
 }
+@media screen and (min-width: 650px) {
+  .brand_container {
+    margin-top: 200px;
+  }
+}
+
 
 .brand_presentation{
   margin-top: 150px;
@@ -711,6 +794,31 @@ max-width: 100%;
   .p2{
     width: 100%;
   }
+}
+@media screen and (min-width: 600px) {
+  .brand_presentation {
+    font-size: x-large;
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .p1{
+      width: 100%;
+    }
+  }
+  .brand_hitory{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .yezzy{
+    
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
 }
 
 .collection_back_adidas{
@@ -875,17 +983,20 @@ footer{
   background: #666;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
-  width: 100%;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   padding: 55px 50px;
 }
 footer img{
   width: 150px;
+  text-align: center;
 }
 
 /* Footer links */
 
 footer ul{
+  text-align: center;
   color:  #ffffff;
   list-style: none;
   margin: 20px 0 12px;
@@ -893,10 +1004,12 @@ footer ul{
 }
 
 footer ul li{
+  text-align: center;
   display:inline-block;
   line-height: 1.8;
   font-weight:400;
   a{
+    text-align: center;
     color:  white;
     padding-right: 5px;
     padding-left: 5px;
@@ -906,6 +1019,7 @@ footer ul li{
 }
 
 footer .footer-company-name{
+  text-align: center;
   color:  #222;
   font-size: 14px;
   font-weight: normal;
@@ -915,29 +1029,14 @@ footer .footer-company-name{
 /* Footer Center */
 
 footer .footer-center{
-  width: 35%;
+  display: flex;
+  flex-direction: column;
 }
 
-footer .footer-center i{
-  background-color:  #33383b;
-  color: #ffffff;
-  font-size: 25px;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 42px;
-  margin: 10px 15px;
-  vertical-align: middle;
-}
 
-footer .footer-center i.fa-envelope{
-  font-size: 17px;
-  line-height: 38px;
-}
+
 
 footer .footer-center p{
-  display: inline-block;
   color: #ffffff;
   font-weight:400;
   vertical-align: middle;
@@ -972,66 +1071,16 @@ footer .footer-links .link-1:before {
 
 /* Footer Right */
 
-footer .footer-right{
-  width: 20%;
-}
-
-footer .footer-company-A propos{
-  line-height: 20px;
-  color:  #92999f;
-  font-size: 13px;
-  font-weight: normal;
-  margin: 0;
-}
-
-footer .footer-company-A propos span{
-  display: block;
-  color:  #ffffff;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-footer .footer-icons{
-  margin-top: 25px;
-}
-
-footer .footer-icons a{
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  background-color:  #33383b;
-  border-radius: 2px;
-
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 35px;
-
-  margin-right: 3px;
-  margin-bottom: 5px;
-}
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 880px) {
 
 
-  footer .footer-left,
-  footer .footer-center,
-  footer .footer-right{
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
+@media screen and (min-width: 1500px) {
+  .footer-right{
+    width: 50%;
+    margin: auto;
   }
-
-  footer .footer-center i{
-    margin-left: 0;
-  }
-
 }
+
+
 .contact-section {
   margin-top: 150px;
   margin-left: 15px;
@@ -1044,6 +1093,12 @@ footer .footer-icons a{
     font-weight: 700;
   }
 }
+@media screen and (min-width: 650px) {
+  .contact-section{
+    margin: 230px auto;
+  }
+}
+
 
 
 
@@ -1082,11 +1137,26 @@ footer .footer-icons a{
 }
 
 .form-submit {
-  width: 90%;
+  width: 70%;
   margin-top: 1.2rem;
   background-color: #3124ca;
   color: #fff;
   padding: 13px 5px;
   border-radius: 0.375rem;
   margin-bottom: 25px;
+}
+
+.about{
+  margin-top: 150px;
+  h2{
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 650px) {
+  .about{
+    margin: 230px auto;
+    img{
+      width: 45%;
+    }
+  }
 }
